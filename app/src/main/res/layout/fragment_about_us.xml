@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginRight="0dp">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/drawer_item_image" />
+
+            <TextView
+                android:id="@+id/rabpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPageTitle"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.50"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Versi 1.0"
+                android:textColor="#C4C4C4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rabpro" />
+
+            <TextView
+                android:id="@+id/fragmentAboutUsTextViewDefinisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Rancangan Anggaran Biaya Profesional adalah aplikasi untuk memudahkan menghitung rata-rata biaya yang dibutuhkan dalam membangun atau merenovasi rumah"
+                android:textColor="@color/colorAboutUsDescription"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="650dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="Contoh penggunaan aplikasi"
+                android:src="@drawable/image_hasil_aplikasi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentAboutUsTextViewDefinisi" />
+
+            <TextView
+                android:id="@+id/definisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Disclaimer"
+                android:textColor="@color/colorAboutUsDescription"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/fragmentAboutUsTextViewDisclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Hasil yang ditampilkan adalah perkiraan dengan mengacu rata-rata kebutuhan bahan, biaya tenaga kerja dan harga bahan bangunan di pulau Jawa. Hasil dapat berbeda tergantung rancangan, harga bahan dan lokasi"
+                android:textColor="@color/colorAboutUsDescription"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/definisi" />
+
+            <TextView
+                android:background="@color/colorButtonDark"
+                android:id="@+id/fragmentAboutUsTextViewLinkAboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:autoLink="web"
+                android:text="www.rabpro.id"
+                android:textSize="18sp"
+                android:textColor="@color/colorAboutUsDescription"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentAboutUsTextViewDisclaimer" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

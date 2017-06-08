@@ -1,0 +1,358 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              tools:context=".fragments.FragmentDaftar"
+              android:orientation="vertical"
+            android:background="#F4F4F4"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:titleTextColor="@color/textColorPrimary"/>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="22sp"
+
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="@color/colorPageTitle"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:paddingBottom="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSignUp"
+            android:id="@+id/constraintLayout3">
+
+            <TextView
+
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Login Data"
+                android:textColor="@color/colorFieldTitle"
+                android:textSize="@dimen/sizeFieldTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutEmail"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edit_text_radius"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <EditText
+                    android:id="@+id/editTextDaftarEmail"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+
+                    android:textColor="@color/colorFieldEditText"
+                    android:textColorHighlight="@color/colorFieldEditText"
+                    android:textColorHint="@color/colorFieldEditText"
+                    android:textColorLink="@color/colorFieldEditText"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="186dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#00000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/imageView"
+                    android:layout_toStartOf="@+id/imageView" />
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/d_envelope"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutPassword"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border_edittext_atas_light"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutEmail"
+                >
+
+
+                <EditText
+                    android:id="@+id/editTextDaftarPassword"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:layout_toStartOf="@+id/imageView2"
+                    android:background="#00000000"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorFieldEditText"
+                    android:textColorHighlight="@color/colorFieldEditText"
+                    android:textColorHint="@color/colorFieldEditText"
+                    android:textColorLink="@color/colorFieldEditText"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="186dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:src="@drawable/d_key" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayoutRetypePassword"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border_edittext_atas_light"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutPassword"
+              >
+
+
+                <EditText
+                    android:id="@+id/editTextDaftarRetype"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+
+                    android:background="#00000000"
+                    android:hint="Retype password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorFieldEditText"
+                    android:textColorHighlight="@color/colorFieldEditText"
+                    android:textColorHint="@color/colorFieldEditText"
+                    android:textColorLink="@color/colorFieldEditText"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="186dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+            <TextView
+
+                android:id="@+id/textViewLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Self Information"
+                android:textColor="@color/colorFieldTitle"
+                android:textSize="@dimen/sizeFieldTitle"
+                app:layout_constraintTop_toBottomOf="@id/relativeLayoutRetypePassword"
+                android:layout_marginLeft="0dp"
+
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutNamaLengkap"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edit_text_radius"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLogin">
+
+                <EditText
+                    android:id="@+id/editTextDaftarNamaLengkap"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:inputType="textEmailAddress"
+
+                    android:textColor="@color/colorFieldEditText"
+                    android:textColorHighlight="@color/colorFieldEditText"
+                    android:textColorHint="@color/colorFieldEditText"
+                    android:textColorLink="@color/colorFieldEditText"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="186dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#00000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toStartOf="@+id/imageView3"
+                    android:layout_toLeftOf="@+id/imageView3" />
+                <ImageView
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/d_person"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutTelephone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border_edittext_atas_light"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutNamaLengkap"
+                >
+
+
+                <EditText
+                    android:id="@+id/editTextDaftarTelephone"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="#00000000"
+                    android:hint="Phone number"
+                    android:inputType="number"
+                    android:textColor="@color/colorFieldEditText"
+                    android:textColorHighlight="@color/colorFieldEditText"
+                    android:textColorHint="@color/colorFieldEditText"
+                    android:textColorLink="@color/colorFieldEditText"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_editor_absoluteY="186dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="14dp"
+                    android:src="@drawable/d_phone" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:id="@+id/buttonDaftarSubmit"
+            android:background="@drawable/shape_button_primary"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonDark"
+            android:textSize="@dimen/abc_text_size_button_material"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
+</LinearLayout>

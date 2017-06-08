@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".fragments.FragmentWebView"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:titleTextColor="@color/textColorPrimary"/>
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_horizontal"
+       android:id="@+id/progressBarWebView"/>
+
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

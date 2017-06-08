@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232418482471",
+    "firebase_url": "https://prodela-ee016.firebaseio.com",
+    "project_id": "prodela-ee016",
+    "storage_bucket": "prodela-ee016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232418482471:android:6f1c5fe91c046bc5",
+        "android_client_info": {
+          "package_name": "com.application.lifehack.prodela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232418482471-377c56jf0i1sji2fv9cgucfh59m7q2k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV3HJ_SfqVh05eif_MgyKyp2L5WilHhAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

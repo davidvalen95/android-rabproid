@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryLight">#e5e3d3</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="colorAccent">#FCD68A</color>
+    <color name="colorSecondaryAccent">#4E4E4E</color>
+    <color name="colorSecondaryTextAccent">#FCD68A</color>
+    <color name="colorPrimaryText">#2E2E2E</color>
+    <color name="colorSecondaryText">#bfbdaf</color>
+    <color name="colorIcons">#414141</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="textColorEditText">#898989</color>
+
+
+    <!--daftar-->
+    <color name="colorPageTitle">#626262</color>
+    <color name="colorFieldTitle">#CDCDCD</color>
+    <color name="colorFieldEditText">#898989</color>
+    <color name="colorButtonDark">#4E4E4E</color>
+    <color name="colorAboutUsDescription">#878787</color>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rabproid</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="BASE_URL">http://www.rabpro.id/api/</string>
+    <string name="namaLogin">namaLogin</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+</resources>

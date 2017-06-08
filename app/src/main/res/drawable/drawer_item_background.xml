@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- focused -->
+    <!-- focused and pressed-->
+    <!-- pressed -->
+    <!-- default -->
+
+
+    <!--<item android:state="true" android:drawable="@color/colorAccent"/>-->
+    <item android:drawable="@color/colorPrimary" />
+
+</selector>
