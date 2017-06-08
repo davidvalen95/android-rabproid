@@ -101,7 +101,17 @@ public class CFunction {
                         }else{
                             String message = responseJson.getString("message");
                             if(!TextUtils.isEmpty("message")){
-                                createDialog(message);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(_context);
+                                builder.setTitle("Oops");
+                                builder.setMessage(message);
+                                builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+
+                                        dialog.dismiss();
+                                    }
+                                });
+                                builder.show();
                             }
                         }
                     }
